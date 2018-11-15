@@ -1,3 +1,13 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [ClientSide.aspx](./CS/ASPxGridVIew/ClientSide.aspx) (VB: [ClientSide.aspx.vb](./VB/ASPxGridVIew/ClientSide.aspx.vb))
+* [ClientSide.aspx.cs](./CS/ASPxGridVIew/ClientSide.aspx.cs) (VB: [ClientSide.aspx.vb](./VB/ASPxGridVIew/ClientSide.aspx.vb))
+* [Default.aspx](./CS/ASPxGridVIew/Default.aspx) (VB: [Default.aspx.vb](./VB/ASPxGridVIew/Default.aspx.vb))
+* [Default.aspx.cs](./CS/ASPxGridVIew/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/ASPxGridVIew/Default.aspx.vb))
+* [ServerSide.aspx](./CS/ASPxGridVIew/ServerSide.aspx) (VB: [ServerSide.aspx.vb](./VB/ASPxGridVIew/ServerSide.aspx.vb))
+* [ServerSide.aspx.cs](./CS/ASPxGridVIew/ServerSide.aspx.cs) (VB: [ServerSide.aspx.vb](./VB/ASPxGridVIew/ServerSide.aspx.vb))
+<!-- default file list end -->
 # ASPxGridView - How to set column values in the Edit Form on the client and server sides
 
 
