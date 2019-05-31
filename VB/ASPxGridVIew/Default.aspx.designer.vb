@@ -7,30 +7,29 @@
 ' </auto-generated>
 '------------------------------------------------------------------------------
 
+Option Strict On
+Option Explicit On
 
-Imports Microsoft.VisualBasic
-Imports System
 Namespace ASPxGridVIew
-
-
-	Partial Public Class [Default]
-
-		''' <summary>
-		''' form1 control.
-		''' </summary>
-		''' <remarks>
-		''' Auto-generated field.
-		''' To modify move field declaration from designer file to code-behind file.
-		''' </remarks>
-		Protected form1 As Global.System.Web.UI.HtmlControls.HtmlForm
-
-		''' <summary>
-		''' ASPxMenu1 control.
-		''' </summary>
-		''' <remarks>
-		''' Auto-generated field.
-		''' To modify move field declaration from designer file to code-behind file.
-		''' </remarks>
-		Protected ASPxMenu1 As Global.DevExpress.Web.ASPxMenu.ASPxMenu
-	End Class
+    
+    Partial Public Class [Default]
+        
+        '''<summary>
+        '''form1 control.
+        '''</summary>
+        '''<remarks>
+        '''Auto-generated field.
+        '''To modify move field declaration from designer file to code-behind file.
+        '''</remarks>
+        Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
+        
+        '''<summary>
+        '''ASPxMenu1 control.
+        '''</summary>
+        '''<remarks>
+        '''Auto-generated field.
+        '''To modify move field declaration from designer file to code-behind file.
+        '''</remarks>
+        Protected WithEvents ASPxMenu1 As Global.DevExpress.Web.ASPxMenu
+    End Class
 End Namespace
