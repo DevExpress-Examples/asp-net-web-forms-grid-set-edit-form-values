@@ -1,5 +1,4 @@
-﻿using DevExpress.Web.ASPxEditors;
-using DevExpress.Web.ASPxGridView;
+﻿using DevExpress.Web;
 using System;
 
 namespace ASPxGridVIew {
@@ -7,7 +6,7 @@ namespace ASPxGridVIew {
         protected void Page_Load(object sender, EventArgs e) {
         }
 
-        protected void grdProducts_CustomUnboundColumnData(object sender, DevExpress.Web.ASPxGridView.ASPxGridViewColumnDataEventArgs e) {
+        protected void grdProducts_CustomUnboundColumnData(object sender, DevExpress.Web.ASPxGridViewColumnDataEventArgs e) {
             if (e.Column.FieldName == "Total") {
                 decimal price = (decimal)e.GetListSourceFieldValue("UnitPrice");
                 int quantity = Convert.ToInt32(e.GetListSourceFieldValue("UnitsInStock"));
@@ -15,7 +14,7 @@ namespace ASPxGridVIew {
             }
         }
 
-        protected void ASPxGridView1_CustomCallback(object sender, DevExpress.Web.ASPxGridView.ASPxGridViewCustomCallbackEventArgs e) {
+        protected void ASPxGridView1_CustomCallback(object sender, DevExpress.Web.ASPxGridViewCustomCallbackEventArgs e) {
             ASPxGridView grid = (ASPxGridView)sender;
             ASPxSpinEdit unitPriceEditor = (ASPxSpinEdit)grid.FindEditRowCellTemplateControl(((GridViewDataColumn)grid.Columns["UnitPrice"]), "UnitPriceEditor");
             ASPxSpinEdit unitsInStockEditor = (ASPxSpinEdit)grid.FindEditRowCellTemplateControl(((GridViewDataColumn)grid.Columns["UnitsInStock"]), "UnitsInStockEditor");
