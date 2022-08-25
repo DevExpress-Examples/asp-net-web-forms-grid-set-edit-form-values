@@ -32,4 +32,4 @@ This example implements the client and server approaches described in the follow
 
 ## More Examples
 
-- [Grid View for ASP.NET Web Forms - How to calculate column values on the client side via editors inside DataItemTemplate](https://www.devexpress.com/Support/Center/p/E3929)
+- [ASPxGridView - How to calculate column values on the client side using DataItemTemplate](https://www.devexpress.com/Support/Center/p/E3929)
