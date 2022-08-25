@@ -13,7 +13,7 @@ This example demonstrates how to calculate a value in code based on column value
 
 ## Implementation Detail
 
-This example implements the client and server approaches described in the following Knowledge Base article:
+This example implements the client and server techniques described in the following Knowledge Base article:
 
 - [KA18839: ASPxGridView - How to set column values in the Edit Form depending on another editor's value](https://www.devexpress.com/Support/Center/p/KA18839)
 
