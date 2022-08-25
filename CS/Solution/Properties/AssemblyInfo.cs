@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ASPxGridVIew")]
+[assembly: AssemblyTitle("Solution")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ASPxGridVIew")]
-[assembly: AssemblyCopyright("Copyright ©  2013")]
+[assembly: AssemblyProduct("Solution")]
+[assembly: AssemblyCopyright("Copyright © 2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("471a3c1b-91ea-468f-96cb-cbd2824f7d72")]
+[assembly: Guid("48f13e0a-d2fa-4626-887b-79d72573622d")]
 
 // Version information for an assembly consists of the following four values:
 //

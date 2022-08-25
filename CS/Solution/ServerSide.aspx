@@ -1,7 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ClientSide.aspx.cs" Inherits="ASPxGridVIew.ClientSide" %>
-
-<%@ Register Assembly="DevExpress.Web.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ServerSide.aspx.cs" Inherits="Solution.ServerSide" %>
 
 <!DOCTYPE html>
 
@@ -11,15 +8,13 @@
 
     <script type="text/javascript">
         function OnEditorValueChanged(s, e) {
-            var unitPrice = grid.GetEditValue("UnitPrice");
-            var unitsInStock = grid.GetEditValue("UnitsInStock");
-            grid.SetEditValue("Total", unitPrice * unitsInStock);
+            grid.PerformCallback();
         }
     </script>
 </head>
 <body>
     <form id="form1" runat="server">
-        <dx:ASPxGridView ID="ASPxGridView1" runat="server" DataSourceID="ads" ClientInstanceName="grid" OnCustomUnboundColumnData="grdProducts_CustomUnboundColumnData" AutoGenerateColumns="False" KeyFieldName="ProductID">
+        <dx:ASPxGridView ID="ASPxGridView1" runat="server" DataSourceID="ads" ClientInstanceName="grid" OnCustomCallback="ASPxGridView1_CustomCallback" OnCustomUnboundColumnData="grdProducts_CustomUnboundColumnData" AutoGenerateColumns="False" KeyFieldName="ProductID" OnRowUpdating="ASPxGridView1_RowUpdating" OnCustomErrorText="ASPxGridView1_CustomErrorText">
             <Columns>
                 <dx:GridViewCommandColumn ShowEditButton="true" VisibleIndex="0">
                 </dx:GridViewCommandColumn>
@@ -28,17 +23,24 @@
                 </dx:GridViewDataTextColumn>
                 <dx:GridViewDataTextColumn FieldName="ProductName" VisibleIndex="2">
                 </dx:GridViewDataTextColumn>
-                <dx:GridViewDataSpinEditColumn FieldName="UnitPrice" VisibleIndex="3">
-                    <PropertiesSpinEdit>
-                        <ClientSideEvents ValueChanged="OnEditorValueChanged" />
-                    </PropertiesSpinEdit>
-                </dx:GridViewDataSpinEditColumn>
-                <dx:GridViewDataSpinEditColumn FieldName="UnitsInStock" VisibleIndex="4">
-                    <PropertiesSpinEdit>
-                        <ClientSideEvents ValueChanged="OnEditorValueChanged" />
-                    </PropertiesSpinEdit>
-                </dx:GridViewDataSpinEditColumn>
+                <dx:GridViewDataColumn FieldName="UnitPrice" VisibleIndex="3">
+                    <EditItemTemplate>
+                        <dx:ASPxSpinEdit ID="UnitPriceEditor" runat="server" Value='<%# Bind("UnitPrice") %>'>
+                            <ClientSideEvents ValueChanged="OnEditorValueChanged" />
+                        </dx:ASPxSpinEdit>
+                    </EditItemTemplate>
+                </dx:GridViewDataColumn>
+                <dx:GridViewDataColumn FieldName="UnitsInStock" VisibleIndex="4">
+                    <EditItemTemplate>
+                        <dx:ASPxSpinEdit ID="UnitsInStockEditor" runat="server" Value='<%# Bind("UnitsInStock") %>'>
+                            <ClientSideEvents ValueChanged="OnEditorValueChanged" />
+                        </dx:ASPxSpinEdit>
+                    </EditItemTemplate>
+                </dx:GridViewDataColumn>
                 <dx:GridViewDataTextColumn FieldName="Total" VisibleIndex="5" ReadOnly="true" UnboundType="Decimal">
+                    <EditItemTemplate>
+                        <dx:ASPxTextBox ID="TotalEditor" runat="server" Value='<%# Bind("Total") %>'></dx:ASPxTextBox>
+                    </EditItemTemplate>
                 </dx:GridViewDataTextColumn>
             </Columns>
         </dx:ASPxGridView>

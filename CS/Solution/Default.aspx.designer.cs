@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ASPxGridVIew {
-    
-    
-    public partial class ServerSide {
-        
+namespace Solution {
+
+
+    public partial class Default {
+
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -20,23 +20,14 @@ namespace ASPxGridVIew {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
-        /// ASPxGridView1 control.
+        /// ASPxMenu1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxGridView ASPxGridView1;
-        
-        /// <summary>
-        /// ads control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.AccessDataSource ads;
+        protected global::DevExpress.Web.ASPxMenu ASPxMenu1;
     }
 }
