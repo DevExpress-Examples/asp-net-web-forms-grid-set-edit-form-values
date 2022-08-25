@@ -11,7 +11,7 @@ This example demonstrates how to calculate a value in code based on column value
 
 ![Set Edit Form Values](set-edit-form-values.png)
 
-## Implementation Detail
+## Implementation Details
 
 This example implements the client and server techniques described in the following Knowledge Base article:
 
