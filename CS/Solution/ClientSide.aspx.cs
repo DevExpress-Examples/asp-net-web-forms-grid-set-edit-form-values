@@ -3,7 +3,7 @@
 namespace Solution {
     public partial class ClientSide : System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e) {
-        }
+        } 
 
         protected void grdProducts_CustomUnboundColumnData(object sender, DevExpress.Web.ASPxGridViewColumnDataEventArgs e) {
             if (e.Column.FieldName == "Total") {
