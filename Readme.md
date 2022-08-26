@@ -11,9 +11,9 @@ This example demonstrates how to calculate a value in code based on column value
 
 ![Set Edit Form Values](set-edit-form-values.png)
 
-## Implementation Detail
+## Implementation Details
 
-This example implements the client and server approaches described in the following Knowledge Base article:
+This example implements the client and server techniques described in the following Knowledge Base article:
 
 - [KA18839: ASPxGridView - How to set column values in the Edit Form depending on another editor's value](https://www.devexpress.com/Support/Center/p/KA18839)
 
@@ -32,4 +32,4 @@ This example implements the client and server approaches described in the follow
 
 ## More Examples
 
-- [Grid View for ASP.NET Web Forms - How to calculate column values on the client side via editors inside DataItemTemplate](https://www.devexpress.com/Support/Center/p/E3929)
+- [ASPxGridView - How to calculate column values on the client side using DataItemTemplate](https://www.devexpress.com/Support/Center/p/E3929)
