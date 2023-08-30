@@ -5,7 +5,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-
     <script type="text/javascript">
         function OnEditorValueChanged(s, e) {
             grid.PerformCallback();
@@ -14,32 +13,32 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <dx:ASPxGridView ID="ASPxGridView1" runat="server" DataSourceID="ads" ClientInstanceName="grid" OnCustomCallback="ASPxGridView1_CustomCallback" OnCustomUnboundColumnData="grdProducts_CustomUnboundColumnData" AutoGenerateColumns="False" KeyFieldName="ProductID" OnRowUpdating="ASPxGridView1_RowUpdating" OnCustomErrorText="ASPxGridView1_CustomErrorText">
+        <dx:ASPxGridView ID="ASPxGridView1" runat="server" DataSourceID="ads" ClientInstanceName="grid" OnCustomCallback="ASPxGridView1_CustomCallback" 
+            OnCustomUnboundColumnData="grdProducts_CustomUnboundColumnData" AutoGenerateColumns="False" KeyFieldName="ProductID" 
+            OnRowUpdating="ASPxGridView1_RowUpdating" OnCustomErrorText="ASPxGridView1_CustomErrorText">
             <Columns>
-                <dx:GridViewCommandColumn ShowEditButton="true" VisibleIndex="0">
-                </dx:GridViewCommandColumn>
-                <dx:GridViewDataTextColumn FieldName="ProductID" ReadOnly="True" VisibleIndex="1">
+                <dx:GridViewCommandColumn ShowEditButton="true" />
+                <dx:GridViewDataTextColumn FieldName="ProductID" ReadOnly="True" >
                     <EditFormSettings Visible="False" />
                 </dx:GridViewDataTextColumn>
-                <dx:GridViewDataTextColumn FieldName="ProductName" VisibleIndex="2">
-                </dx:GridViewDataTextColumn>
-                <dx:GridViewDataColumn FieldName="UnitPrice" VisibleIndex="3">
+                <dx:GridViewDataTextColumn FieldName="ProductName" />
+                <dx:GridViewDataColumn FieldName="UnitPrice" >
                     <EditItemTemplate>
                         <dx:ASPxSpinEdit ID="UnitPriceEditor" runat="server" Value='<%# Bind("UnitPrice") %>'>
                             <ClientSideEvents ValueChanged="OnEditorValueChanged" />
                         </dx:ASPxSpinEdit>
                     </EditItemTemplate>
                 </dx:GridViewDataColumn>
-                <dx:GridViewDataColumn FieldName="UnitsInStock" VisibleIndex="4">
+                <dx:GridViewDataColumn FieldName="UnitsInStock" >
                     <EditItemTemplate>
                         <dx:ASPxSpinEdit ID="UnitsInStockEditor" runat="server" Value='<%# Bind("UnitsInStock") %>'>
                             <ClientSideEvents ValueChanged="OnEditorValueChanged" />
                         </dx:ASPxSpinEdit>
                     </EditItemTemplate>
                 </dx:GridViewDataColumn>
-                <dx:GridViewDataTextColumn FieldName="Total" VisibleIndex="5" ReadOnly="true" UnboundType="Decimal">
+                <dx:GridViewDataTextColumn FieldName="Total"  ReadOnly="true" UnboundType="Decimal">
                     <EditItemTemplate>
-                        <dx:ASPxTextBox ID="TotalEditor" runat="server" Value='<%# Bind("Total") %>'></dx:ASPxTextBox>
+                        <dx:ASPxTextBox ID="TotalEditor" runat="server" Value='<%# Bind("Total") %>' />
                     </EditItemTemplate>
                 </dx:GridViewDataTextColumn>
             </Columns>
