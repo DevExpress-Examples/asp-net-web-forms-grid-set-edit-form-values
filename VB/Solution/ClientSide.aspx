@@ -16,27 +16,25 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <dx:ASPxGridView ID="ASPxGridView1" runat="server" DataSourceID="ads" ClientInstanceName="grid" OnCustomUnboundColumnData="grdProducts_CustomUnboundColumnData" AutoGenerateColumns="False" OnRowUpdating="ASPxGridView1_RowUpdating" OnCustomErrorText="ASPxGridView1_CustomErrorText" KeyFieldName="ProductID">
+        <dx:ASPxGridView ID="ASPxGridView1" runat="server" DataSourceID="ads" ClientInstanceName="grid" OnCustomUnboundColumnData="grdProducts_CustomUnboundColumnData" 
+            AutoGenerateColumns="False" OnRowUpdating="ASPxGridView1_RowUpdating" OnCustomErrorText="ASPxGridView1_CustomErrorText" KeyFieldName="ProductID">
             <Columns>
-                <dx:GridViewCommandColumn ShowEditButton="true" VisibleIndex="0">
-                </dx:GridViewCommandColumn>
-                <dx:GridViewDataTextColumn FieldName="ProductID" ReadOnly="True" VisibleIndex="1">
+                <dx:GridViewCommandColumn ShowEditButton="true" />
+                <dx:GridViewDataTextColumn FieldName="ProductID" ReadOnly="True" >
                     <EditFormSettings Visible="False" />
                 </dx:GridViewDataTextColumn>
-                <dx:GridViewDataTextColumn FieldName="ProductName" VisibleIndex="2">
-                </dx:GridViewDataTextColumn>
-                <dx:GridViewDataSpinEditColumn FieldName="UnitPrice" VisibleIndex="3">
+                <dx:GridViewDataTextColumn FieldName="ProductName" />
+                <dx:GridViewDataSpinEditColumn FieldName="UnitPrice" >
                     <PropertiesSpinEdit>
                         <ClientSideEvents ValueChanged="OnEditorValueChanged" />
                     </PropertiesSpinEdit>
                 </dx:GridViewDataSpinEditColumn>
-                <dx:GridViewDataSpinEditColumn FieldName="UnitsInStock" VisibleIndex="4">
+                <dx:GridViewDataSpinEditColumn FieldName="UnitsInStock" >
                     <PropertiesSpinEdit>
                         <ClientSideEvents ValueChanged="OnEditorValueChanged" />
                     </PropertiesSpinEdit>
                 </dx:GridViewDataSpinEditColumn>
-                <dx:GridViewDataTextColumn FieldName="Total" VisibleIndex="5" ReadOnly="true" UnboundType="Decimal">
-                </dx:GridViewDataTextColumn>
+                <dx:GridViewDataTextColumn FieldName="Total" ReadOnly="true" UnboundType="Decimal" />
             </Columns>
         </dx:ASPxGridView>
 
