@@ -12,11 +12,11 @@ This example demonstrates how to dynamically calculate the **Total** value in th
 
 ## Implementation Details
 
-You can calculate and assign values to edit form editors both on the client and server sides.
+You can calculate and assign values to edit form editors on the client and server sides.
 
 ### Client Side
 
-Follow the steps below to calculate and assign editor values on the client side.
+Follow the steps below to calculate and assign editor values on the client.
 
 1. Subscribe to the client [ValueChanged](https://docs.devexpress.com/AspNet/js-ASPxClientEdit.ValueChanged) event in columns whose values affect the calculated value.
    ```aspx
@@ -51,7 +51,7 @@ Follow the steps below to calculate and assign editor values on the client side.
 
 Follow the steps below to calculate and assign editor values on the server side.
 
-1. Define [EditItemTemplate](https://docs.devexpress.devx/AspNet/DevExpress.Web.GridViewDataColumn.EditItemTemplate) for columns whose values are involved in calculation. Add editors in templates and bind them to appropriate fields in your data source.
+1. Define [EditItemTemplate](https://docs.devexpress.devx/AspNet/DevExpress.Web.GridViewDataColumn.EditItemTemplate) for columns whose values are involved in the calculation. Add editors in templates and bind them to corresponding fields in your data source.
    ```aspx
    <dx:GridViewDataColumn FieldName="UnitPrice" >
        <EditItemTemplate>
@@ -83,7 +83,7 @@ Follow the steps below to calculate and assign editor values on the server side.
         <ClientSideEvents ValueChanged="OnEditorValueChanged" />
     </dx:ASPxSpinEdit>
    ```
-3. In the event handler, call the [PerformCallback](https://docs.devexpress.devx/AspNet/js-ASPxClientGridView.PerformCallback(args)) method to sends a callback to the server and generate the [CustomCallback](https://docs.devexpress.devx/AspNet/DevExpress.Web.ASPxGridView.CustomCallback) event.
+3. In the event handler, call the [PerformCallback](https://docs.devexpress.devx/AspNet/js-ASPxClientGridView.PerformCallback(args)) method to send a callback to the server and generate the [CustomCallback](https://docs.devexpress.devx/AspNet/DevExpress.Web.ASPxGridView.CustomCallback) event.
    ```js
    function OnEditorValueChanged(s, e) {
        grid.PerformCallback();
