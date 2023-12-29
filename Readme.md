@@ -4,9 +4,6 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 # Grid View for ASP.NET WebForms - How to modify edit form values at runtime
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128535406/)**
-<!-- run online end -->
 This example demonstrates how to dynamically calculate the **Total** value in the [edit form](https://docs.devexpress.com/AspNet/3710/components/grid-view/concepts/edit-data/edit-form) when a user changes the **Unit Price** or **Unit In Stock** value.
 
 ![Set Edit Form Values](set-edit-form-values.png)
